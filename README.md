@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Purelle — Laboratory Skincare Demo
 
-## Getting Started
+Premium frontend-only e-commerce demo for **Purelle**, built with Next.js App Router, TypeScript, Tailwind CSS, and Framer Motion.
 
-First, run the development server:
+Designed to connect later to the **Shopify Storefront API** — product data lives in `data/` so UI components stay decoupled from commerce backend.
+
+## Stack
+
+- Next.js 16 (App Router)
+- TypeScript
+- Tailwind CSS v4
+- Framer Motion
+- Lucide React
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Route | Description |
+|-------|-------------|
+| `/` | Homepage — hero, featured, concerns, ingredients, philosophy, results, reviews, gallery, newsletter |
+| `/shop` | Product grid with search, category/concern filters, sorting |
+| `/product/[slug]` | Product detail — gallery, ingredients, reviews, related |
+| `/about` | Brand story, R&D, sustainability, values |
+| `/contact` | Contact form UI + FAQ preview |
+| `/cart` | Frontend cart with demo checkout modal |
+| `/wishlist` | Saved products |
+| `/faq` | Accordion FAQ |
 
-## Learn More
+## Project structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+app/           # Routes & layouts
+components/    # Reusable UI
+data/          # Mock products & content (Shopify-ready seam)
+lib/           # Utils (format, filter, sort)
+types/         # Shared TypeScript types
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Shopify readiness
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Cart and wishlist use `localStorage`. Replace `data/products.ts` queries with Storefront API responses using the same `Product` type in `types/index.ts`.
 
-## Deploy on Vercel
+Checkout currently shows: *Demo checkout — Shopify integration will be connected later.*
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Scripts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run dev      # Development
+npm run build    # Production build
+npm run start    # Start production server
+npm run lint     # ESLint
+```
