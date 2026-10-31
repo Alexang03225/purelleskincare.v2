@@ -108,7 +108,7 @@ export default function AboutPage() {
               },
             ].map((item, i) => (
               <FadeIn key={item.step} delay={i * 0.1}>
-                <article className="h-full border border-line bg-ivory/70 p-7">
+                <article className="h-full border border-line bg-paper/70 p-7">
                   <p className="font-serif text-4xl text-gold/80">{item.step}</p>
                   <h3 className="mt-4 font-serif text-2xl text-charcoal">
                     {item.title}
@@ -156,7 +156,7 @@ export default function AboutPage() {
       </section>
 
       {/* Sustainability */}
-      <section className="section-padding border-t border-line bg-charcoal py-20 text-ivory lg:py-28">
+      <section className="section-padding border-t border-line bg-ink py-20 text-ivory lg:py-28">
         <div className="container-purelle max-w-3xl">
           <FadeIn>
             <p className="eyebrow text-ivory/45">Sustainability</p>

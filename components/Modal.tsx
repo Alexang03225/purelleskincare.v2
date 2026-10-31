@@ -34,7 +34,7 @@ export function Modal({ open, onClose, title, children }: ModalProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="absolute inset-0 bg-charcoal/40 backdrop-blur-sm"
+            className="absolute inset-0 bg-ink/60 backdrop-blur-sm"
             onClick={onClose}
             aria-label="Close dialog"
           />
@@ -45,7 +45,7 @@ export function Modal({ open, onClose, title, children }: ModalProps) {
             initial={{ opacity: 0, y: 16, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 12, scale: 0.98 }}
-            className="relative z-10 w-full max-w-lg border border-line bg-ivory p-6 shadow-xl sm:p-8"
+            className="relative z-10 w-full max-w-lg border border-line bg-paper p-6 shadow-xl sm:p-8"
           >
             <div className="mb-5 flex items-start justify-between gap-4">
               <h2 id="modal-title" className="font-serif text-2xl text-charcoal">

@@ -87,7 +87,7 @@ export function FilterMenu({
           id="sort"
           value={sort}
           onChange={(e) => onSortChange(e.target.value as SortOption)}
-          className="focus-ring w-full border border-line bg-white/60 px-4 py-3 text-sm text-charcoal"
+          className="focus-ring w-full border border-line bg-paper/60 px-4 py-3 text-sm text-charcoal"
         >
           <option value="featured">Featured</option>
           <option value="newest">Newest</option>

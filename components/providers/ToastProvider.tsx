@@ -54,7 +54,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
               initial={{ opacity: 0, y: 16, scale: 0.98 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 8, scale: 0.98 }}
-              className="pointer-events-auto flex items-start gap-3 border border-line bg-white px-4 py-3 shadow-[0_12px_40px_rgba(34,34,34,0.08)]"
+              className="pointer-events-auto flex items-start gap-3 border border-line bg-paper px-4 py-3 shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
             >
               <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-sage" aria-hidden />
               <p className="flex-1 text-sm text-charcoal">{t.message}</p>

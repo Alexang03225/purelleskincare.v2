@@ -52,7 +52,7 @@ export default function ContactPage() {
                     onChange={(e) =>
                       setForm((f) => ({ ...f, name: e.target.value }))
                     }
-                    className="focus-ring w-full border border-line bg-white/50 px-4 py-3 text-sm"
+                    className="focus-ring w-full border border-line bg-paper/50 px-4 py-3 text-sm"
                   />
                 </div>
                 <div>
@@ -67,7 +67,7 @@ export default function ContactPage() {
                     onChange={(e) =>
                       setForm((f) => ({ ...f, email: e.target.value }))
                     }
-                    className="focus-ring w-full border border-line bg-white/50 px-4 py-3 text-sm"
+                    className="focus-ring w-full border border-line bg-paper/50 px-4 py-3 text-sm"
                   />
                 </div>
               </div>
@@ -82,7 +82,7 @@ export default function ContactPage() {
                   onChange={(e) =>
                     setForm((f) => ({ ...f, subject: e.target.value }))
                   }
-                  className="focus-ring w-full border border-line bg-white/50 px-4 py-3 text-sm"
+                  className="focus-ring w-full border border-line bg-paper/50 px-4 py-3 text-sm"
                 />
               </div>
               <div>
@@ -97,7 +97,7 @@ export default function ContactPage() {
                   onChange={(e) =>
                     setForm((f) => ({ ...f, message: e.target.value }))
                   }
-                  className="focus-ring w-full resize-y border border-line bg-white/50 px-4 py-3 text-sm"
+                  className="focus-ring w-full resize-y border border-line bg-paper/50 px-4 py-3 text-sm"
                 />
               </div>
               <button type="submit" className="btn-primary">

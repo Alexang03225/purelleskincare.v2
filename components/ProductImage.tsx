@@ -48,7 +48,7 @@ export function ProductImage({
         }}
       />
       <div
-        className="pointer-events-none absolute inset-0 bg-gradient-to-t from-charcoal/[0.06] via-transparent to-ivory/[0.08]"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/[0.06] via-transparent to-ivory/[0.08]"
         aria-hidden
       />
     </div>

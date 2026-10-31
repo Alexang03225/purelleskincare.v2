@@ -54,7 +54,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
             toggleItem(product);
             toast(saved ? "Removed from wishlist" : "Saved to wishlist");
           }}
-          className="focus-ring absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-mist/90 text-charcoal opacity-100 backdrop-blur-sm transition hover:bg-ink hover:text-mist sm:opacity-0 sm:group-hover:opacity-100"
+          className="focus-ring absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-mist/90 text-charcoal opacity-100 backdrop-blur-sm transition hover:bg-ink hover:text-ivory sm:opacity-0 sm:group-hover:opacity-100"
           aria-label={saved ? "Remove from wishlist" : "Add to wishlist"}
         >
           <Heart

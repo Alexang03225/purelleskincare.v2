@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --ivory: #f6f3ee;
-  --sand: #e5ddd2;
-  --charcoal: #2a2622;
-  --sage: #9eaf9a;
-  --gold: #b8a06a;
-  --muted: #8a837a;
-  --line: rgba(42, 38, 34, 0.1);
-  --ink: #1c1916;
-  --paper: #efeae3;
-  --mist: #faf8f5;
-  --blush: #ebe4dc;
+  --ivory: #f5f7f4;
+  --sand: #2f5a48;
+  --charcoal: #f5f7f4;
+  --sage: #d4899a;
+  --gold: #f4c4ce;
+  --muted: #a3b8ae;
+  --line: #3a5c4e;
+  --ink: #122820;
+  --paper: #243f36;
+  --mist: #1b3d32;
+  --blush: #243f36;
 }
 
 @theme inline {
@@ -33,6 +33,7 @@
 }
 
 html {
+  color-scheme: dark;
   scroll-behavior: smooth;
 }
 
@@ -92,17 +93,17 @@ h4,
   align-items: center;
   justify-content: center;
   gap: 0.65rem;
-  background: var(--ink);
+  background: var(--gold);
   padding: 1rem 2rem;
   font-size: 0.7rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.24em;
-  color: var(--mist);
+  color: var(--ink);
   transition: background 0.4s ease, letter-spacing 0.4s ease;
   outline: none;
   &:hover {
-    background: color-mix(in srgb, var(--ink) 88%, white);
+    background: var(--sage);
     letter-spacing: 0.28em;
   }
   &:focus-visible {
@@ -170,8 +171,8 @@ h4,
 
 @utility soft-wash {
   background:
-    radial-gradient(ellipse 70% 50% at 10% 0%, rgba(158, 175, 154, 0.14), transparent 55%),
-    radial-gradient(ellipse 50% 40% at 100% 20%, rgba(184, 160, 106, 0.1), transparent 50%),
+    radial-gradient(ellipse 70% 50% at 10% 0%, rgba(244, 196, 206, 0.08), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 100% 20%, rgba(47, 90, 72, 0.5), transparent 50%),
     var(--mist);
 }
 

@@ -93,7 +93,7 @@ export function ProductDetailClient({
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </motion.div>
-          <div className="absolute bottom-0 left-0 right-0 flex border-t border-line bg-ivory/90 backdrop-blur-sm">
+          <div className="absolute bottom-0 left-0 right-0 flex border-t border-line bg-mist/90 backdrop-blur-sm">
             {[0, 1, 2].map((i) => (
               <button
                 key={i}
@@ -208,7 +208,7 @@ export function ProductDetailClient({
                     onClick={() => setTab(key)}
                     className={`focus-ring flex-1 py-3 text-[11px] uppercase tracking-[0.18em] transition ${
                       tab === key
-                        ? "bg-ink text-mist"
+                        ? "bg-ink text-ivory"
                         : "bg-transparent text-muted hover:text-charcoal"
                     }`}
                   >
